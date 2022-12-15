@@ -3,7 +3,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', 
+    redirectTo: 'listaExpedientes', 
+    pathMatch: 'full'
+  },
+  {
+    path: 'listaExpedientes',
+    loadChildren: () => import('./expediente/expediente.module').then( m => m.ExpedientePageModule)
+  },
+  {
+    path: 'expediente',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   }
 ];

@@ -24,16 +24,16 @@ export class Galeria {
 
   public async showActionSheet(photo: UserPhoto, position: number) {
     const actionSheet = await this.actionSheetController.create({
-      header: 'Photos',
+      header: 'Imagen',
       buttons: [{
-        text: 'Delete',
+        text: 'Eliminar',
         role: 'destructive',
         icon: 'trash',
         handler: () => {
           this.photoService.deletePicture(photo, position);
         }
       }, {
-        text: 'Cancel',
+        text: 'Cancelar',
         icon: 'close',
         role: 'cancel',
         handler: () => {

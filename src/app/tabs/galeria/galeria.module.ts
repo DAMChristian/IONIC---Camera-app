@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Galeria } from './galeria.page';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { GaleriaRoutingModule } from './galeria-routing.module';
 
@@ -12,7 +11,6 @@ import { GaleriaRoutingModule } from './galeria-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     GaleriaRoutingModule
   ],
   declarations: [Galeria]
